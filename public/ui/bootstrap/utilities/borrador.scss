@@ -1,0 +1,112 @@
+.tribal {
+    position: absolute;
+}
+
+.tribal.start-top {
+    top: 0;
+    left: 0;
+}
+
+.tribal.end-top {
+    top: 0;
+    right: 0;
+    transform: rotateY(.5turn);
+}
+
+.tribal.end-botton {
+    bottom: 0;
+    right: 0;
+    transform: rotateY(.5turn);
+}
+
+.card-new {
+    .card-img-top {
+        height: 240px;
+    }
+}
+.card-new .card-img-top img,
+.object-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.list-group-items {
+    list-style: none;
+    > li {
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        + li {
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.list-foot {
+    li {
+        padding: 8px 0;
+        > a {
+            text-decoration: none;
+        }
+        + li {
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.bg-img-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-orange-mid-gradient {
+    background-image: linear-gradient(45deg, #{map-get($orange-main, '500')}, transparent);
+}
+.bg-orange-gradient {
+    background-image: linear-gradient(45deg, #{map-get($orange, '400')}, #{map-get($orange-main, '500')});
+}
+.gradient-orange-yellow {
+    background-image: linear-gradient(#{map-get($orange, '400')}, #FFBF35);
+}
+
+.form-contat {
+    input, textarea {
+        &:focus {
+            box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.75);
+        }
+    }
+}
+
+.placeholder-white::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-custom {
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to left, #007dbc 0%, #007dbc 70%, #5dbb46 70%);
+    }
+}
+
+.bg-gradient-blog {
+    background-image: linear-gradient(90deg, #{map-get($orange-main, '500')}, rgb(255, 204, 50, .5));
+}
+
+.transition-transform {
+    transition: transform ease-in-out 200ms;
+}
+
+.text-blue {
+    color: #28265c;
+}
+
+.border-blue {
+    border-color: #28265c !important;
+}

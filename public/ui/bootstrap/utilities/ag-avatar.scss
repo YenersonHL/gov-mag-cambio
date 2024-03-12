@@ -1,0 +1,21 @@
+.ag-avatar-rounded-full,
+.ag-avatar {
+    --size-avatar: 45px;
+    width: var(--size-avatar);
+    height: var(--size-avatar);
+    display: inline-block;
+    position: relative;
+    > img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.ag-avatar-rounded-full {
+    > img {
+        border-radius: 50%;
+    }
+}

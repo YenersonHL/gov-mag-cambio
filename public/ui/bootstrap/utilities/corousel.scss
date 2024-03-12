@@ -1,0 +1,9 @@
+.carousel-home {
+    .carousel-item {
+        height: 750px;
+        > img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+#content-ruseta {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    transition: all ease-in-out 200ms;
+}
+
+.section-ruseta {
+    --size-img: 700px;
+
+    .content-ruseta {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        position: absolute;
+    }
+
+    .content-text {
+        height: 400px;
+        padding-left: 5rem;
+    }
+
+    .observer {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 300px;
+        height: calc(var(--size-img) / 6);
+        transform: translateY(-50%);
+        z-index: 10;
+        // background-color: red;
+    }
+
+    .ruseta {
+        position: absolute;
+        width: var(--size-img);
+        height: var(--size-img);
+        animation: rusetaRotate 100000ms linear infinite normal both;
+
+        img {
+            width: var(--size-img);
+            height: var(--size-img);
+        }
+
+        span {
+            position: absolute;
+            display: block;
+            width: calc(var(--size-img) / 7);
+            height: calc(var(--size-img) / 7);
+            border-radius: 50%;
+
+            &:nth-child(1) {
+                top: 5%;
+                left: 33%;
+            }
+
+            &:nth-child(2) {
+                top: 5%;
+                left: 52%;
+            }
+
+            &:nth-child(3) {
+                top: 13.5%;
+                left: 68%;
+            }
+
+            &:nth-child(4) {
+                top: 29%;
+                left: 78%;
+            }
+
+            &:nth-child(5) {
+                top: 47%;
+                left: 80.5%;
+            }
+
+            &:nth-child(6) {
+                top: 64%;
+                left: 73.5%;
+            }
+
+            &:nth-child(7) {
+                top: 75%;
+                left: 60.5%;
+            }
+
+            &:nth-child(8) {
+                top: 79.5%;
+                left: 43.5%;
+            }
+
+            &:nth-child(9) {
+                top: 76%;
+                left: 26%;
+            }
+
+            &:nth-child(10) {
+                top: 64%;
+                left: 12%;
+            }
+
+            &:nth-child(11) {
+                top: 47%;
+                left: 6%;
+            }
+
+            &:nth-child(12) {
+                top: 29%;
+                left: 7.5%;
+            }
+
+            &:nth-child(13) {
+                top: 14%;
+                left: 18%;
+            }
+        }
+    }
+}
+
+@keyframes rusetaRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(-360deg);
+    }
+}

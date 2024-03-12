@@ -1,0 +1,75 @@
+$orange-main: (
+    '50': #fef6ee,
+    '100': #feebd6,
+    '200': #fbd2ad,
+    '300': #f9b378,
+    '400': #f58942,
+    '500': #f3722c,
+    '600': #e34e13,
+    '700': #bc3912,
+    '800': #962f16,
+    '900': #792915,
+    '950': #411209,
+);
+$carmin-main: (
+    '50': #fef2f2,
+    '100': #fde8e6,
+    '200': #fbd0d0,
+    '300': #f8a9a9,
+    '400': #f3797c,
+    '500': #e94a52,
+    '600': #d5293a,
+    '700': #c31f33,
+    '800': #961b2e,
+    '900': #811a2d,
+    '950': #480913,
+);
+
+
+$orange: (
+    '50': #fff7ed,
+    '100': #ffedd5,
+    '200': #fed7aa,
+    '300': #fdba74,
+    '400': #fb923c,
+    '500': #f97316,
+    '600': #ea580c,
+    '700': #c2410c,
+    '800': #9a3412,
+    '900': #7c2d12,
+    '950': #431407,
+);
+
+$gray: (
+    '50': #f9fafb,
+    '100': #f3f4f6,
+    '200': #e5e7eb,
+    '300': #d1d5db,
+    '400': #9ca3af,
+    '500': #6b7280,
+    '600': #4b5563,
+    '700': #374151,
+    '800': #1f2937,
+    '900': #111827,
+    '950': #030712,
+);
+
+.bg-orange {
+    background-color: map-get($orange-main, '500');
+}
+
+.text-orange {
+    color: map-get($orange-main, '500') !important;
+}
+
+.border-orange {
+    border-color: map-get($orange-main, '500') !important;
+}
+
+.bg-carmin {
+    background-color: map-get($carmin-main, '700');
+}
+
+.text-carmin {
+    color: map-get($carmin-main, '700') !important;
+}

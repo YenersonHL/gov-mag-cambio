@@ -1,0 +1,41 @@
+.modal-link-navegation {
+    > li {
+        > a {
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            font-size: 1.45rem;
+            text-decoration: none;
+            position: relative;
+            margin-left: 80px;
+            padding-left: 1rem;
+            color: map-get($gray, '400');
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                right: 100%;
+                transition: all ease-in-out 200ms;
+            }
+            &::after {
+                width: 80px;
+                border-top: 2px solid #{rgba(map-get($gray, '400'), .4)};
+            }
+            &::before {
+                width: 0px;
+                border-top: 2px solid #{map-get($orange, '500')};
+                z-index: 1;
+            }
+            &.active,
+            &:hover {
+                color: map-get($orange, '600');
+                &::before {
+                    width: 80px;
+                }
+            }
+        }
+        + li {
+            margin-top: 1.25rem;
+        }
+    }
+}

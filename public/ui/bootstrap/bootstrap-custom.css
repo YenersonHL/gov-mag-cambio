@@ -1,0 +1,323 @@
+.ag-avatar-rounded-full,
+.ag-avatar {
+  --size-avatar: 45px;
+  width: var(--size-avatar);
+  height: var(--size-avatar);
+  display: inline-block;
+  position: relative;
+}
+.ag-avatar-rounded-full > img,
+.ag-avatar > img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.ag-avatar-rounded-full > img {
+  border-radius: 50%;
+}
+
+.bg-orange {
+  background-color: #f3722c;
+}
+
+.text-orange {
+  color: #f3722c !important;
+}
+
+.border-orange {
+  border-color: #f3722c !important;
+}
+
+.bg-carmin {
+  background-color: #c31f33;
+}
+
+.text-carmin {
+  color: #c31f33 !important;
+}
+
+.carousel-home .carousel-item {
+  height: 750px;
+}
+.carousel-home .carousel-item > img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-navegation .modal-content {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.modal-link-navegation > li > a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  font-size: 1.45rem;
+  text-decoration: none;
+  position: relative;
+  margin-left: 80px;
+  padding-left: 1rem;
+  color: #9ca3af;
+}
+.modal-link-navegation > li > a::after, .modal-link-navegation > li > a::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  transition: all ease-in-out 200ms;
+}
+.modal-link-navegation > li > a::after {
+  width: 80px;
+  border-top: 2px solid rgba(156, 163, 175, 0.4);
+}
+.modal-link-navegation > li > a::before {
+  width: 0px;
+  border-top: 2px solid #f97316;
+  z-index: 1;
+}
+.modal-link-navegation > li > a.active, .modal-link-navegation > li > a:hover {
+  color: #ea580c;
+}
+.modal-link-navegation > li > a.active::before, .modal-link-navegation > li > a:hover::before {
+  width: 80px;
+}
+.modal-link-navegation > li + li {
+  margin-top: 1.25rem;
+}
+
+.title-section-basic {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f3722c;
+  line-height: 1;
+  font-size: 2rem;
+  padding-left: 18px;
+}
+.title-section-basic::before {
+  content: "";
+  width: 100%;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: #f3722c;
+}
+
+#content-ruseta {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  transition: all ease-in-out 200ms;
+}
+
+.section-ruseta {
+  --size-img: 700px;
+}
+.section-ruseta .content-ruseta {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+.section-ruseta .content-text {
+  height: 400px;
+  padding-left: 5rem;
+}
+.section-ruseta .observer {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 300px;
+  height: calc(var(--size-img) / 6);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.section-ruseta .ruseta {
+  position: absolute;
+  width: var(--size-img);
+  height: var(--size-img);
+  animation: rusetaRotate 100000ms linear infinite normal both;
+}
+.section-ruseta .ruseta img {
+  width: var(--size-img);
+  height: var(--size-img);
+}
+.section-ruseta .ruseta span {
+  position: absolute;
+  display: block;
+  width: calc(var(--size-img) / 7);
+  height: calc(var(--size-img) / 7);
+  border-radius: 50%;
+}
+.section-ruseta .ruseta span:nth-child(1) {
+  top: 5%;
+  left: 33%;
+}
+.section-ruseta .ruseta span:nth-child(2) {
+  top: 5%;
+  left: 52%;
+}
+.section-ruseta .ruseta span:nth-child(3) {
+  top: 13.5%;
+  left: 68%;
+}
+.section-ruseta .ruseta span:nth-child(4) {
+  top: 29%;
+  left: 78%;
+}
+.section-ruseta .ruseta span:nth-child(5) {
+  top: 47%;
+  left: 80.5%;
+}
+.section-ruseta .ruseta span:nth-child(6) {
+  top: 64%;
+  left: 73.5%;
+}
+.section-ruseta .ruseta span:nth-child(7) {
+  top: 75%;
+  left: 60.5%;
+}
+.section-ruseta .ruseta span:nth-child(8) {
+  top: 79.5%;
+  left: 43.5%;
+}
+.section-ruseta .ruseta span:nth-child(9) {
+  top: 76%;
+  left: 26%;
+}
+.section-ruseta .ruseta span:nth-child(10) {
+  top: 64%;
+  left: 12%;
+}
+.section-ruseta .ruseta span:nth-child(11) {
+  top: 47%;
+  left: 6%;
+}
+.section-ruseta .ruseta span:nth-child(12) {
+  top: 29%;
+  left: 7.5%;
+}
+.section-ruseta .ruseta span:nth-child(13) {
+  top: 14%;
+  left: 18%;
+}
+
+@keyframes rusetaRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(-360deg);
+  }
+}
+.tribal {
+  position: absolute;
+}
+
+.tribal.start-top {
+  top: 0;
+  left: 0;
+}
+
+.tribal.end-top {
+  top: 0;
+  right: 0;
+  transform: rotateY(0.5turn);
+}
+
+.tribal.end-botton {
+  bottom: 0;
+  right: 0;
+  transform: rotateY(0.5turn);
+}
+
+.card-new .card-img-top {
+  height: 240px;
+}
+
+.card-new .card-img-top img,
+.object-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.list-group-items {
+  list-style: none;
+}
+.list-group-items > li {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.list-group-items > li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.list-foot li {
+  padding: 8px 0;
+}
+.list-foot li > a {
+  text-decoration: none;
+}
+.list-foot li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.bg-img-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-orange-mid-gradient {
+  background-image: linear-gradient(45deg, #f3722c, transparent);
+}
+
+.bg-orange-gradient {
+  background-image: linear-gradient(45deg, #fb923c, #f3722c);
+}
+
+.gradient-orange-yellow {
+  background-image: linear-gradient(#fb923c, #FFBF35);
+}
+
+.form-contat input:focus, .form-contat textarea:focus {
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.75);
+}
+
+.placeholder-white::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-custom::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to left, #007dbc 0%, #007dbc 70%, #5dbb46 70%);
+}
+
+.bg-gradient-blog {
+  background-image: linear-gradient(90deg, #f3722c, rgba(255, 204, 50, 0.5));
+}
+
+.transition-transform {
+  transition: transform ease-in-out 200ms;
+}
+
+.text-blue {
+  color: #28265c;
+}
+
+.border-blue {
+  border-color: #28265c !important;
+}
+
+/*# sourceMappingURL=bootstrap-custom.css.map */
