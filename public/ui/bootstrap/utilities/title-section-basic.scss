@@ -16,4 +16,8 @@
         right: 100%;
         background-color: map-get($orange-main,'500');
     }
+    > a {
+        color: inherit;
+        text-decoration: none;
+    }
 }

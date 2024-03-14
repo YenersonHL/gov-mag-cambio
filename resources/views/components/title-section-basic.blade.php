@@ -1,3 +1,3 @@
 <div class="title-section-basic">
-    {!! $setLabel !!}
+    <a href="#">{!! $setLabel !!}</a>
 </div>

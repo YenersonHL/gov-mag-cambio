@@ -7,6 +7,12 @@
 .section-ruseta {
     --size-img: 700px;
 
+    .static {
+        position: absolute;
+        width: var(--size-img);
+        height: var(--size-img);
+    }
+
     .content-ruseta {
         width: 100%;
         align-items: center;
@@ -21,7 +27,7 @@
 
     .observer {
         position: absolute;
-        right: 0;
+        right: -15px;
         top: 50%;
         width: 300px;
         height: calc(var(--size-img) / 6);
@@ -47,6 +53,7 @@
             width: calc(var(--size-img) / 7);
             height: calc(var(--size-img) / 7);
             border-radius: 50%;
+            // background-color: yellow;
 
             &:nth-child(1) {
                 top: 5%;

@@ -16,7 +16,7 @@
                             <div class="col-4">
                                 <ul class="list-group-items">
                                     <template v-for="(video, index) in videoList">
-                                        <li class="block mb-2"  @click="changeVideo(video.url)">
+                                        <li class="block mb-1 content-link-block"  @click="changeVideo(video.url)">
                                             <div class="card border-0">
                                                 <div class="row">
                                                     <div class="col-auto">

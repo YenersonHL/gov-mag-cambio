@@ -15,21 +15,21 @@
         <x-navegation-top />
         <x-modal-navegation />
         @yield('body')
-        <x-section-home-patrocinio />
+        {{-- <x-section-home-patrocinio /> --}}
         <x-footer-main />
     </div>
     <script src="{{ asset('ui/bootstrap/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('ui/vue/vue-v2.js') }}"></script>
     @yield('script')
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
+    /*document.addEventListener("DOMContentLoaded", () => {
         const sliderFooter = new Splide('#slider-footer', {
             type: 'loop',
             perPage: 4,
             gap: 10
         });
         sliderFooter.mount();
-    });
+    });*/
     </script>
 </body>
 </html>

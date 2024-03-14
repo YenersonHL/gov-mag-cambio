@@ -20,7 +20,7 @@ function init() {
     let ultimoElementoSobreFijo = null;
     let indexStore = null;
 
-    function verificarSuperposicion() {
+    const verificarSuperposicion =()=> {
         elementosAnimados.forEach((elementoAnimado) => {
             const animadoRect = elementoAnimado.getBoundingClientRect();
             const fijoRect = elementoFijo.getBoundingClientRect();
@@ -77,7 +77,7 @@ new Vue({
         },
         data: {
             reload: true,
-            currentVideoUrl: '',
+            currentVideoUrl: 'https://www.youtube.com/embed/7FqfEOiOaoo',
             videoList: [
                 { title: 'Poder Popular y Ferias de la Equidad', url: 'https://www.youtube.com/embed/7FqfEOiOaoo' },
                 { title: 'Recibimos por parte del Ministerio del Interior el premio', url: 'https://www.youtube.com/embed/KMfAksDzzzs' },

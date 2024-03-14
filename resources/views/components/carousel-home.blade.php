@@ -1,19 +1,15 @@
 <div id="carouselHome" class="carousel slide carousel-home" data-bs-ride="true">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        @foreach($carouselHome as $key => $value)
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="{{ $key }}" class="{{ $key === 0 ? 'active' : '' }}" aria-current="{{ $key === 0 ? 'true' : 'false' }}"></button>
+        @endforeach
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{{ asset('img/carousel-img-1.png') }}" class="d-block w-100" alt="img">
+        @foreach($carouselHome as $key => $value)
+        <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+            <img src="{{ asset('img/galery/'.$value['img']) }}" class="d-block w-100" alt="img">
         </div>
-        <div class="carousel-item">
-            <img src="{{ asset('img/carousel-img-1.png') }}" class="d-block w-100" alt="img">
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('img/carousel-img-1.png') }}" class="d-block w-100" alt="img">
-        </div>
+        @endforeach
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -11,26 +11,13 @@
                             <div class="row justify-content-center">
                                 <div class="col-10">
                                     <div class="row">
+                                        @foreach($linksHome as $key)
                                         <div class="col-3">
-                                            <a href="" class="text-decoration-none">
-                                                <img height="60" src="{{ asset('img/LOGOS-02-orange.png') }}" alt="">
+                                            <a href="{{ url('/blog/'.$key['link']) }}" class="text-decoration-none content-link">
+                                                <img height="60" src="{{ asset('img/'.$key['img']) }}" alt="">
                                             </a>
                                         </div>
-                                        <div class="col-3">
-                                            <a href="" class="text-decoration-none">
-                                                <img height="60" src="{{ asset('img/LOGOS-03-orange.png') }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="" class="text-decoration-none">
-                                                <img height="60" src="{{ asset('img/LOGOS-04-orange.png') }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="" class="text-decoration-none">
-                                                <img height="60" src="{{ asset('img/LOGOS-02-orange.png') }}" alt="">
-                                            </a>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>

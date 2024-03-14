@@ -11,6 +11,7 @@
                                 @endforeach
                                 <img src="{{ asset('img/ROSETA.png') }}" alt="">
                             </div>
+                            <img class="static" src="{{ asset('img/ROSETA-center.png') }}" alt="">
                             <div class="observer" id="observer"></div>
                         </div>
                     </div>
