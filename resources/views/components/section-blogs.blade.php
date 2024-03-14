@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12">
             <div class="container">
-                @foreach([1,2,3] as $key)
+                @foreach([1,2] as $key)
                 <div class="row align-items-center mb-5">
                     <div class="col-12">
                         <x-title-section-blue
@@ -16,10 +16,10 @@
                     <div class="col-6 ps-4">
                         <div class="row">
                             <div class="col-6">
-                                <x-img-titles />
+                                <x-img-titles img="a-1.jpg" title="Fuerza del cambio" />
                             </div>
                             <div class="col-6">
-                                <x-img-titles />
+                                <x-img-titles img="a-2.jpg" title="El cambio sigue" />
                             </div>
                         </div>
                     </div>
