@@ -22,7 +22,9 @@
                                     <li class="splide__slide">
                                         <article class="card border-0 card-new">
                                             <div class="card-img-top position-relative overflow-hidden rounded-3">
-                                                <img class="w-100" src="{{ asset('img/padd/' . $key + 1 . '.jpg') }}" alt="">
+                                                <a href="{{ url("/noticia/lorem-ipsum") }}" class="block h-100">
+                                                    <img class="object-img h-100" src="{{ asset('img/padd/' . $key + 1 . '.jpg') }}" alt="">
+                                                </a>
                                                 <div class="position-absolute bottom-0 start-0 w-100 bg-black bg-opacity-50 text-white">
                                                     <h1 class="block p-3 pt-4 fs-6">
                                                         {{ $article['title'] }}
@@ -37,9 +39,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card-body p-0 pt-3">
+                                            <a href="{{ url("/noticia/lorem-ipsum") }}" class="card-body text-decoration-none p-0 pt-3">
                                                 {{ $article['description'] }}
-                                            </div>
+                                            </a>
                                         </article>
                                     </li>
                                     @endforeach
