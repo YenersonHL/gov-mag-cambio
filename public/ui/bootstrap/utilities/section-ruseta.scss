@@ -15,6 +15,7 @@
 
     .content-ruseta {
         width: 100%;
+        justify-content: center;
         align-items: center;
         display: flex;
         position: absolute;
@@ -45,6 +46,7 @@
         img {
             width: var(--size-img);
             height: var(--size-img);
+            clip-path: circle(50% at 50% 50%);
         }
 
         span {
@@ -128,7 +130,46 @@
         transform: rotate(0deg);
     }
 
-    from {
-        transform: rotate(-360deg);
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: map-get($breakpoints, "lg")) {
+    #content-ruseta {
+        margin-top: 23rem;
+        margin-bottom: 2.5rem;
+        .section-ruseta {
+            --size-img: 600px;
+        }
+        .content-text {
+            margin-top: 18rem;
+            height: 350px;
+            padding-bottom: 5rem;
+        }
+    }
+}
+@media (max-width: map-get($breakpoints, "md")) {
+    #content-ruseta {
+        margin-top: 18rem;
+        margin-bottom: 2.5rem;
+        .section-ruseta {
+            --size-img: 500px;
+        }
+        .content-text {
+            margin-top: 15rem;
+            height: 280px;
+        }
+    }
+}
+@media (max-width: map-get($breakpoints, "sm")) {
+    #content-ruseta {
+        margin-top: 14rem;
+        .section-ruseta {
+            --size-img: 300px;
+        }
+        .content-text {
+            margin-top: 10rem;
+            height: 200px;
+        }
     }
 }

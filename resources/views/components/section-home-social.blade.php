@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="d-flex gap-4 mb-3 justify-content-center flex-wrap align-items-center">
                                     <div class="col-auto fs-2">
                                         <i class="fa fa-facebook"></i>
@@ -21,7 +21,7 @@
                                     lorem
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="d-flex gap-4 mb-3 justify-content-center flex-wrap align-items-center">
                                     <div class="col-auto fs-2">
                                         <i class="fa fa-twitter"></i>
@@ -34,7 +34,7 @@
                                     lorem
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4">
                                 <div class="d-flex gap-4 mb-3 justify-content-center flex-wrap align-items-center">
                                     <div class="col-auto fs-2">
                                         <i class="fa fa-instagram"></i>

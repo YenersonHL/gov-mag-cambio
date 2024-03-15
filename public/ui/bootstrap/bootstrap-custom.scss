@@ -1,3 +1,16 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px
+);
+
+body {
+    overflow-x: hidden;
+}
+
 @import 'utilities/ag-avatar.scss';
 @import 'utilities/colors.scss';
 @import 'utilities/corousel.scss';

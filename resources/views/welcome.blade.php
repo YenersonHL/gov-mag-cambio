@@ -50,7 +50,18 @@ function init() {
         perPage: 4.5,
         gap: 10,
         pagination: false,
-        arrows: false
+        arrows: false,
+        breakpoints: {
+            1200: {
+                perPage: 3.5, // Cambia a 2 elementos por página en pantallas de 576px o más
+            },
+            768: {
+                perPage: 2.5, // Cambia a 2 elementos por página en pantallas de 576px o más
+            },
+            576: {
+                perPage: 1.5, // Cambia a 2 elementos por página en pantallas de 576px o más
+            }
+        }
     });
 
 

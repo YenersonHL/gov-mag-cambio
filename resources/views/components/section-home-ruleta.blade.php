@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="container section-ruseta">
                 <div class="row align-items-center">
-                    <div class="col-6 position-relative">
+                    <div class="col-12 col-lg-6 position-relative">
                         <div class="content-ruseta">
                             <div class="ruseta">
                                 @foreach($slices as $key => $value)
@@ -15,7 +15,7 @@
                             <div class="observer" id="observer"></div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="content-text d-flex align-items-center text-white">
                             <div class="block ps-4 border-start border-3 border-white">
                                 <h3 id="ruseta-title" class="fs-2 text-uppercase"></h3>

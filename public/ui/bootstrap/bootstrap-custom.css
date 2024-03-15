@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .ag-avatar-rounded-full,
 .ag-avatar {
   --size-avatar: 45px;
@@ -45,6 +49,8 @@
 .carousel-home .carousel-item > img {
   object-fit: cover;
   object-position: center;
+  width: 100%;
+  height: 750px;
 }
 
 .modal-navegation .modal-content {
@@ -127,6 +133,7 @@
 }
 .section-ruseta .content-ruseta {
   width: 100%;
+  justify-content: center;
   align-items: center;
   display: flex;
   position: absolute;
@@ -153,6 +160,7 @@
 .section-ruseta .ruseta img {
   width: var(--size-img);
   height: var(--size-img);
+  clip-path: circle(50% at 50% 50%);
 }
 .section-ruseta .ruseta span {
   position: absolute;
@@ -218,8 +226,47 @@
   from {
     transform: rotate(0deg);
   }
-  from {
-    transform: rotate(-360deg);
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 992px) {
+  #content-ruseta {
+    margin-top: 23rem;
+    margin-bottom: 2.5rem;
+  }
+  #content-ruseta .section-ruseta {
+    --size-img: 600px;
+  }
+  #content-ruseta .content-text {
+    margin-top: 18rem;
+    height: 350px;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #content-ruseta {
+    margin-top: 18rem;
+    margin-bottom: 2.5rem;
+  }
+  #content-ruseta .section-ruseta {
+    --size-img: 500px;
+  }
+  #content-ruseta .content-text {
+    margin-top: 15rem;
+    height: 280px;
+  }
+}
+@media (max-width: 576px) {
+  #content-ruseta {
+    margin-top: 14rem;
+  }
+  #content-ruseta .section-ruseta {
+    --size-img: 300px;
+  }
+  #content-ruseta .content-text {
+    margin-top: 10rem;
+    height: 200px;
   }
 }
 .tribal {

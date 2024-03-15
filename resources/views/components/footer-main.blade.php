@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
                         <ul class="list-unstyled d-flex flex-wrap gap-4 fs-2 mb-1">
                             <li>
                                 <i class="fa fa-facebook"></i>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="block">
                             <hr class="border-2 border-top border-white w-25 mb-1">
                             <h3>Enlaces de interes</h3>
@@ -52,7 +52,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="block">
                             <hr class="border-2 border-top border-white w-25 mb-1">
                             <h3>Enlaces de interes</h3>

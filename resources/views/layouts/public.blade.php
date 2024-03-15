@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Gov - @yield('title')</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('ui/icofont/font-awesome/font-awesome-v4.7.0.css') }}">
     <link rel="stylesheet" href="{{ asset('ui/bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('ui/bootstrap/bootstrap-custom.css') }}">

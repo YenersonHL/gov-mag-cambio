@@ -9,7 +9,7 @@
                     <div class="col-12 mb-3">
                         <div class="row">
                             @foreach([1,2,3,4,5,6] as $key)
-                            <div class="col-4 mb-4">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <a href="{{ url("/noticia/lorem-ipsum") }}" class="card overflow-hidden border-0 shadow-sm h-100 text-link">
                                     <div class="card-body bg-light position-relative">
                                         <h6 class="fs-5 fw-normal">Lorem, ipsum, dolor.</h6>
