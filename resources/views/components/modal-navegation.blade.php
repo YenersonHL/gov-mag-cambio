@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-8">
+                        <div class="col-12 col-lg-8 mb-3">
                             <h5 class="fs-1 mb-5 fw-bold text-orange">MENÚ</h5>
                             <ul class="list-unstyled modal-link-navegation text-uppercase">
                                 <li><a class="{{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Inicio</a></li>
@@ -18,8 +18,12 @@
                                 <li><a class="{{ request()->is('contacto') ? 'active' : '' }}" href="{{ url('/contacto') }}">Contactar</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
-                            <img src="{{ asset('img/logo-cambio-orange.png') }}" width="300" alt="">
+                        <div class="col-12 col-lg-4">
+                            <picture>
+                                <source srcset="{{ asset('img/logo-cambio-orange-sm.png') }}" width="150" media="(max-width: 600px)">
+                                <source srcset="{{ asset('img/logo-cambio-orange-md.png') }}" width="225" media="(max-width: 1024px)">
+                                <img src="{{ asset('img/logo-cambio-orange.png') }}" width="300" alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>
