@@ -7,18 +7,11 @@
         <div class="collapse navbar-collapse ">
             <div class="d-flex w-100 justify-content-end">
             <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+                @foreach($navegationMenu as $value => $key)
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ url('/') }}">Inicio</a>
+                    <a class="nav-link text-white" href="{{ url($key['path']) }}">{{ $key['label'] }}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ url('/blog') }}">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ url('/noticias') }}">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="{{ url('/contacto') }}">Contactar</a>
-                </li>
+                @endforeach
             </ul>
             </div>
         </div>

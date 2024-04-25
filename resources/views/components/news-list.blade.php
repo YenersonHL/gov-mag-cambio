@@ -8,12 +8,14 @@
                     </div>
                     <div class="col-12 mb-3">
                         <div class="row">
-                            @foreach([1,2,3,4,5,6] as $key)
+                            @foreach($newList as $key => $value)
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <a href="{{ url("/noticia/lorem-ipsum") }}" class="card overflow-hidden border-0 shadow-sm h-100 text-link">
-                                    <div class="card-body bg-light position-relative">
-                                        <h6 class="fs-5 fw-normal">Lorem, ipsum, dolor.</h6>
+                                <div class="card overflow-hidden border-0 shadow-sm h-100 text-link">
+                                    <a href="{{ url('/noticia/' . $value['path']) }}" class="card-body bg-light position-relative text-decoration-none">
+                                        <h6 class="fs-5 fw-normal">{{ $value['title'] }}</h6>
                                         <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque officia corporis modi alias hic debitis ab sint similique, culpa omnis illum expedita ratione, at, exercitationem dignissimos facere ducimus impedit!</p>
+                                    </a>
+                                    <div class="position-relative w-100">
                                         <div class="position-absolute bottom-0 start-0 w-100 z-1 translate-middle-ny">
                                             <div class="d-flex justify-content-end pe-3 flex-wrap gap-1">
                                                 <button type="button" class="btn bg-white shadow-md">
@@ -25,8 +27,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <img src="{{ asset('img/galery/a-1.jpg') }}" class="card-img-botton img-cover" alt="...">
-                                </a>
+                                    <img src="{{ asset('img/galery/' . $value['img']) }}" class="card-img-botton img-cover" alt="...">
+                                </div>
                             </div>
                             @endforeach
                         </div>

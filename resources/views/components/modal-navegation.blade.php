@@ -12,10 +12,13 @@
                         <div class="col-12 col-lg-8 mb-3">
                             <h5 class="fs-1 mb-5 fw-bold text-orange">MENÚ</h5>
                             <ul class="list-unstyled modal-link-navegation text-uppercase">
-                                <li><a class="{{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Inicio</a></li>
-                                <li><a class="{{ request()->is('noticias') ? 'active' : '' }}" href="{{ url('/noticias') }}">Noticias</a></li>
-                                <li><a class="{{ request()->is('blog') ? 'active' : '' }}" href="{{ url('/blog') }}">Nosotros</a></li>
-                                <li><a class="{{ request()->is('contacto') ? 'active' : '' }}" href="{{ url('/contacto') }}">Contactar</a></li>
+                                @foreach($navegationMenu as $value => $key)
+                                <li>
+                                    <a class="{{ request()->is($key['path']) ? 'active' : '' }}" href="{{ url($key['path']) }}">
+                                        {{ $key['label'] }}
+                                    </a>
+                                </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="col-12 col-lg-4">

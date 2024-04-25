@@ -13,8 +13,7 @@ class newMarkdown extends Component
     public $new = '';
     public function __construct($new = '')
     {
-        // $new
-        $this->new = $this->readMarkdownFile('test-md');
+        $this->new = $this->readMarkdownFile($new);
     }
 
     public function render(): View|Closure|string
