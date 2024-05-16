@@ -18,7 +18,19 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    lorem
+                                    <div
+                                    class="fb-page"
+                                    data-href="https://www.facebook.com/carloseduardocaicedo"
+                                    data-tabs="timeline"
+                                    data-width="380"
+                                    data-small-header="false"
+                                    data-adapt-container-width="true"
+                                    data-hide-cover="false"
+                                    data-show-facepile="true">
+                                        <blockquote cite="https://www.facebook.com/carloseduardocaicedo" class="fb-xfbml-parse-ignore">
+                                            <a href="https://www.facebook.com/carloseduardocaicedo">Carlos Eduardo Caicedo Omar</a>
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">
@@ -31,7 +43,7 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    lorem
+                                    <a class="twitter-timeline" href="https://twitter.com/carlosecaicedo?ref_src=twsrc%5Etfw">Tweets by carlosecaicedo</a>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">

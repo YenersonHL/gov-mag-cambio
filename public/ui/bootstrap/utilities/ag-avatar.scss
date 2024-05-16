@@ -5,17 +5,38 @@
     height: var(--size-avatar);
     display: inline-block;
     position: relative;
-    > img {
+
+    >img {
         object-fit: cover;
         object-position: center;
         width: 100%;
         height: 100%;
         position: absolute;
     }
+
+    &.size-sm {
+        --size-avatar: 60px;
+    }
+
+    &.size-md {
+        --size-avatar: 80px;
+    }
+
+    &.size-lg {
+        --size-avatar: 100px;
+    }
+
+    &.size-xl {
+        --size-avatar: 120px;
+    }
+
+    &.size-xxl {
+        --size-avatar: 200px;
+    }
 }
 
 .ag-avatar-rounded-full {
-    > img {
+    >img {
         border-radius: 50%;
     }
 }

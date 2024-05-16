@@ -55,7 +55,8 @@ $gray: (
 );
 
 .bg-orange {
-    background-color: map-get($orange-main, '500');
+    --bg-opacity: 1.0;
+    background-color: rgba(map-get($orange-main, '500'), var(--bg-opacity));
 }
 
 .text-orange {
@@ -72,4 +73,12 @@ $gray: (
 
 .text-carmin {
     color: map-get($carmin-main, '700') !important;
+}
+
+.bg-opacity-5 {
+    --bg-opacity: 0.5;
+}
+
+.bg-opacity-7\.5 {
+    --bg-opacity: 0.75;
 }

@@ -7,6 +7,7 @@
 <x-section-home-noticias />
 <x-section-home-videos />
 <x-section-home-social />
+<div id="fb-root"></div>
 @endsection
 @section('script')
 <script type="text/javascript">
@@ -107,4 +108,6 @@ new Vue({
         },
     });
 </script>
+<script async src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v19.0"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 @endsection

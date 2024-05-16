@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ asset('ui/icofont/font-awesome/font-awesome-v4.7.0.css') }}">
     <link rel="stylesheet" href="{{ asset('ui/bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('ui/bootstrap/bootstrap-custom.css') }}">
-    <script type="text/javascript" src="{{ asset('ui/splide/splide.min.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('ui/splide/splide.min.css') }}">
+    <script type="text/javascript" src="{{ asset('ui/splide/splide.min.js') }}"></script>
     @yield('style')
 </head>
 <body>

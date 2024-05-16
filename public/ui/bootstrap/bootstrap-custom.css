@@ -18,13 +18,34 @@ body {
   height: 100%;
   position: absolute;
 }
+.ag-avatar-rounded-full.size-sm,
+.ag-avatar.size-sm {
+  --size-avatar: 60px;
+}
+.ag-avatar-rounded-full.size-md,
+.ag-avatar.size-md {
+  --size-avatar: 80px;
+}
+.ag-avatar-rounded-full.size-lg,
+.ag-avatar.size-lg {
+  --size-avatar: 100px;
+}
+.ag-avatar-rounded-full.size-xl,
+.ag-avatar.size-xl {
+  --size-avatar: 120px;
+}
+.ag-avatar-rounded-full.size-xxl,
+.ag-avatar.size-xxl {
+  --size-avatar: 200px;
+}
 
 .ag-avatar-rounded-full > img {
   border-radius: 50%;
 }
 
 .bg-orange {
-  background-color: #f3722c;
+  --bg-opacity: 1.0;
+  background-color: rgba(243, 114, 44, var(--bg-opacity));
 }
 
 .text-orange {
@@ -41,6 +62,14 @@ body {
 
 .text-carmin {
   color: #c31f33 !important;
+}
+
+.bg-opacity-5 {
+  --bg-opacity: 0.5;
+}
+
+.bg-opacity-7\.5 {
+  --bg-opacity: 0.75;
 }
 
 .carousel-home .carousel-item {
@@ -269,6 +298,20 @@ body {
     height: 200px;
   }
 }
+.header-title {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 320px;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.header-title .content {
+  height: 320px;
+}
+.header-title .titles-content {
+  margin-bottom: -2rem;
+}
+
 .tribal {
   position: absolute;
 }
@@ -427,6 +470,61 @@ body {
 .text-link {
   text-decoration: none;
   color: inherit !important;
+}
+
+.animate_element {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-2000px) scale(0.7);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.backInLeft {
+  animation-name: backInLeft;
+  opacity: 0;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInRight {
+  animation-name: fadeInRight;
 }
 
 /*# sourceMappingURL=bootstrap-custom.css.map */

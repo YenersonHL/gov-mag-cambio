@@ -12,7 +12,7 @@ class SectionHomeNoticias extends Component
         [
             'title' => 'El Tiempo',
             'target' => '_blank',
-            'img' => '1.jpg',
+            'img' => 'eltiempo.jpg',
             'description' => 'Se oficializa el apoyo Caribe para el \'Sí\'',
             'url' => 'https://www.eltiempo.com/archivo/documento/CMS-16696306',
             'tags' => ['Lorem', 'Ipsum', 'News'],
@@ -22,7 +22,7 @@ class SectionHomeNoticias extends Component
         [
             'title' => 'El Tiempo',
             'target' => '_blank',
-            'img' => '1.jpg',
+            'img' => 'eltiempo.jpg',
             'description' => 'Absuelven a ex rector de la Universidad del Magdalena, Carlos Caicedo',
             'url' => 'https://www.eltiempo.com/archivo/documento/CMS-9315900',
             'tags' => ['Lorem', 'Ipsum', 'News'],
@@ -32,7 +32,7 @@ class SectionHomeNoticias extends Component
         [
             'title' => 'El Tiempo',
             'target' => '_blank',
-            'img' => '1.jpg',
+            'img' => 'eltiempo.jpg',
             'description' => 'El legado que el alcalde Carlos Caicedo le deja a Santa Marta',
             'url' => 'https://www.eltiempo.com/archivo/documento/CMS-16468570',
             'tags' => ['Lorem', 'Ipsum', 'News'],
@@ -42,7 +42,7 @@ class SectionHomeNoticias extends Component
         [
             'title' => 'La FM',
             'target' => '_blank',
-            'img' => '11.jpg',
+            'img' => 'fm.png',
             'description' => 'Proponen empresa pública para el manejo de la energía en la Costa Caribe',
             'url' => 'https://www.lafm.com.co/colombia/proponen-empresa-publica-manejo-la-energia-la-costa-caribe',
             'tags' => ['Lorem', 'Ipsum', 'News'],
@@ -72,7 +72,7 @@ class SectionHomeNoticias extends Component
         [
             'title' => 'EL Tiempo',
             'target' => '_blank',
-            'img' => '1.jpg',
+            'img' => 'eltiempo.jpg',
             'description' => 'Carlos Caicedo propone reestructurar el Estado para disminuir el gasto',
             'url' => 'https://www.eltiempo.com/colombia/otras-ciudades/elecciones-2018-carlos-caicedo-vota-en-el-hogar-infantil-bastidas-192536',
             'tags' => ['Lorem', 'Ipsum', 'News'],
