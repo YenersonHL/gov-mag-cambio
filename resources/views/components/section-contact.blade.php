@@ -13,7 +13,8 @@
                     </div>
                     <div class="col-12 col-lg-6 bg-orange-gradient text-white">
                         <div class="block p-5 my-5">
-                            <form class="row form-contat">
+                            <form class="row form-contat" @submit.prevent="sendFormContact">
+                                @csrf
                                 <div class="col-12 col-xl-9 mb-4">
                                     <h2 class="text-uppercase text-center fw-bold border-bottom pb-1 border-2 border-white">Comentanos tus inquietudes</h2>
                                     <div class="fs-4 lh-sm">Envianos tus sugerencias y preguntas. Para nosotros es importante tu opinio.</div>
@@ -22,26 +23,18 @@
                                     <div class="row">
                                         <div class="col-6 mb-3">
                                             <label for="input-uno" class="form-label">Nombre</label>
-                                            <input type="email" class="form-control border-white placeholder-white bg-transparent text-white" id="input-uno" placeholder="Nombre">
-                                        </div>
-                                        <div class="col-6 mb-3">
-                                            <label for="input-dos" class="form-label">Apellido</label>
-                                            <input type="email" class="form-control border-white placeholder-white bg-transparent text-white" id="input-dos" placeholder="Apellido">
+                                            <input v-model="formContact.name" type="text" class="form-control border-white placeholder-white bg-transparent text-white" id="input-uno" placeholder="Nombre">
                                         </div>
                                         <div class="col-6 mb-3">
                                             <label for="input-tres" class="form-label">Correo electronico</label>
-                                            <input type="email" class="form-control border-white placeholder-white bg-transparent text-white" id="input-tres" placeholder="Correo electronico">
-                                        </div>
-                                        <div class="col-6 mb-3">
-                                            <label for="input-cuadro" class="form-label">Telefono</label>
-                                            <input type="email" class="form-control border-white placeholder-white bg-transparent text-white" id="input-cuadro" placeholder="Telefono">
+                                            <input v-model="formContact.email" type="email" class="form-control border-white placeholder-white bg-transparent text-white" id="input-tres" placeholder="Correo electronico">
                                         </div>
                                         <div class="col-12 mb-3">
                                               <label for="input-cinco" class="form-label">Escribe tu comentario</label>
-                                              <textarea class="form-control border-white placeholder-white bg-transparent w-100" id="input-cinco" rows="3"></textarea>
+                                              <textarea v-model="formContact.message" class="form-control border-white placeholder-white bg-transparent w-100" id="input-cinco" rows="3"></textarea>
                                         </div>
                                         <div class="col-12 mb-3 text-end">
-                                            <button type="button" class="btn btn-outline-light px-5">Enviar</button>
+                                            <button type="submit" class="btn btn-outline-light px-5">Enviar</button>
                                         </div>
                                     </div>
                                 </div>

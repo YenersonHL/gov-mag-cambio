@@ -11,7 +11,7 @@
                             @foreach($newList as $key => $value)
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card overflow-hidden border-0 shadow-sm h-100 text-link">
-                                    <a href="{{ url('/noticia/' . $value['path']) }}" class="card-body bg-light position-relative text-decoration-none">
+                                    <a href="{{ url('/noticias/' . $value['path']) }}" class="card-body bg-light position-relative text-decoration-none">
                                         <h6 class="fs-5 fw-normal">{{ $value['title'] }}</h6>
                                         <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque officia corporis modi alias hic debitis ab sint similique, culpa omnis illum expedita ratione, at, exercitationem dignissimos facere ducimus impedit!</p>
                                     </a>

@@ -4,13 +4,17 @@
 <x-carousel-home />
 <x-section-home-project />
 <x-section-home-ruleta />
-<x-section-home-noticias />
+<x-section-home-noticias :news="$news" title="En los medios" />
+<x-news-outstanding />
 <x-section-home-videos />
 <x-section-home-social />
 <div id="fb-root"></div>
 @endsection
 @section('script')
 <script type="text/javascript">
+const { timer } = rxjs;
+const { take } = rxjs.operators;
+
 function init() {
     const content = document.getElementById('content-ruseta');
     const title = document.getElementById('ruseta-title');
@@ -54,13 +58,13 @@ function init() {
         arrows: false,
         breakpoints: {
             1200: {
-                perPage: 3.5, // Cambia a 2 elementos por página en pantallas de 576px o más
+                perPage: 3.5,
             },
             768: {
-                perPage: 2.5, // Cambia a 2 elementos por página en pantallas de 576px o más
+                perPage: 2.5,
             },
             576: {
-                perPage: 1.5, // Cambia a 2 elementos por página en pantallas de 576px o más
+                perPage: 1.5,
             }
         }
     });
@@ -85,7 +89,13 @@ new Vue({
         delimiters: ['[[', ']]'],
         el: '#app',
         mounted() {
-            init();
+            const timerObservable = timer(500).pipe(
+                take(1)
+            );
+
+            timerObservable.subscribe(() => {
+                init();
+            });
         },
         data: {
             reload: true,

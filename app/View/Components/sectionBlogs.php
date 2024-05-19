@@ -10,9 +10,11 @@ use App\Traits\BlogsList;
 class sectionBlogs extends Component
 {
     use BlogsList;
-    public function __construct()
+    public $category;
+
+    public function __construct($category = 'all')
     {
-        //
+        $this->category = $category;
     }
 
     public function render(): View|Closure|string

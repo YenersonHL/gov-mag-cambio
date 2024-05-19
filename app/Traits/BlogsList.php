@@ -6,7 +6,8 @@ trait BlogsList
 {
     public $blogsList = [
         [
-            "path" => "/blog/carlos-caicedo",
+            "category" => "us",
+            "path" => "/nosotros/carlos-caicedo",
             "imgs" => [
                 ["img" => "a-1.jpg", "title" => "Fuerza del cambio"],
                 ["img" => "a-2.jpg", "title" => "Por el pueblo"]
@@ -16,7 +17,8 @@ trait BlogsList
             "beforeTilte" => "Carlos Caicedo"
         ],
         [
-            "path" => "/blog/medico-en-tu-casa",
+            "category" => "project",
+            "path" => "/project/medico-en-tu-casa",
             "imgs" => [
                 ["img" => "mc-1.jpg", "title" => "Medicos en tu casa"],
                 ["img" => "mc-2.jpg", "title" => "Salud al alcance"]
@@ -26,7 +28,8 @@ trait BlogsList
             "beforeTilte" => "gestión del riesgo para las poblaciones vulnerables"
         ],
         [
-            "path" => "/blog/modistas-del-cambio",
+            "category" => "project",
+            "path" => "/project/modistas-del-cambio",
             "imgs" => [
                 ["img" => "mc-3.jpg", "title" => "Fuerza del cambio"],
                 ["img" => "mc-4.jpg", "title" => "Fuerza del queso"]
@@ -34,6 +37,17 @@ trait BlogsList
             "description" => "Proyecto de Reactivación Económica en el Departamento del Magdalena: Impulsado por Carlos Caicedo",
             "title" => "Modiastas del cambio",
             "beforeTilte" => "Estrategia de Reactivaciónd de la Económica"
+        ],
+        [
+            "category" => "us",
+            "path" => "/nosotros/fuerza-ciudadana",
+            "imgs" => [
+                ["img" => "f-ciudadana.jpg", "title" => ""],
+                ["img" => "f-ciudadana2.jpg", "title" => ""]
+            ],
+            "description" => "Fuerza Ciudadana, un movimiento político que con el tiempo se ha posicionado en el contexto nacional",
+            "title" => "¡Fuerza Ciudadana, más que un partido!",
+            "beforeTilte" => "Un referente de la izquierda progresista"
         ]
     ];
 }

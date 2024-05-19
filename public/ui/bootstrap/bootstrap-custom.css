@@ -527,4 +527,307 @@ body {
   animation-name: fadeInRight;
 }
 
+/**
+ * importante que la position del elemnto este asginada
+ * @param bottom | top
+ */
+/**
+ * cuadrado 1x1 con contenido centrante absolute
+ * @param $prefix: 'ui': asigna alias
+ */
+.im-headparallax {
+  --im-headparallax-height: 80vh;
+  --im-headparallax-titles-mxwidth: 70%;
+  --im-headparallax-ul-separed: 3rem;
+  --im-headparallax-text-align: left;
+  --im-headparallax-mb-section: 8rem;
+  --im-btn-border-color: rgba(255, 255, 255, 0.5);
+  --im-btn-border-color-hover: rgba(255, 255, 255, 0.5);
+  --im-btn-bg: transparent;
+  --im-btn-bg-hover: rgba(255, 255, 255, 0.15);
+  --im-btn-color: inherit;
+  --im-btn-color-hover: inherit;
+  --im-btn-padding-x: 1.5rem;
+  --im-btn-padding-y: 10px;
+  --im-btn-rounded: 8px;
+  --im-btn-width: auto;
+  --im-btn-font-size: 1.25rem;
+  --im-icono-bg: rgba(255, 255, 255, 0.25);
+  --im-icono-border-color: transparent;
+  --im-icono-size: 3rem;
+  --im-icono-shadow: none;
+  --im-icono-rounded: none;
+  --im-icono-color: inherit;
+  --im-icono-dimension: 2.5;
+  --im-icono-justify: center;
+  --im-tarj-width: 250px;
+  --im-tarj-gap: 15px;
+  --im-tarj-fx-direction: row;
+  --im-tarj-padding: 25px;
+  --im-tarj-align-item: center;
+  --im-tarj-blur: 5px;
+  --im-tarj-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  --im-tarj-bg: transparent;
+  --im-tarj-color: inherit;
+  --im-tarj-border-color: rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+}
+
+.im-headparallax * {
+  box-sizing: border-box;
+}
+
+.im-headparallax ul,
+.im-headparallax p {
+  margin: 0;
+}
+
+.im-headparallax ul {
+  padding: 0;
+  list-style: none;
+}
+
+.im-headparallax button {
+  all: initial;
+  cursor: pointer;
+}
+
+.im-headparallax h1, .im-headparallax h2, .im-headparallax h3, .im-headparallax h4, .im-headparallax h5, .im-headparallax h6 {
+  margin: 0;
+}
+
+.im-headparallax a.im-headparallax-btn {
+  text-decoration: none;
+}
+
+.im-headparallax .im-headparallax-btn {
+  border: 1px solid;
+  border-color: var(--im-btn-border-color);
+  border-radius: var(--im-btn-rounded);
+  display: inline-block;
+  width: var(--im-btn-width);
+  padding: var(--im-btn-padding-y) var(--im-btn-padding-x);
+  color: var(--im-btn-color);
+  cursor: pointer;
+  background-color: var(--im-btn-bg);
+  font-size: var(--im-btn-font-size);
+  font-family: inherit;
+  user-select: none;
+  transition: 200ms ease-out;
+  transition-property: background-color, border-color, color;
+}
+
+.im-headparallax .im-headparallax-btn.im-active, .im-headparallax .im-headparallax-btn:not(.im-active):hover {
+  background-color: var(--im-btn-bg-hover);
+  border-color: var(--im-btn-border-color-hover);
+  color: var(--im-btn-color-hover);
+}
+
+.im-headparallax .im-headparallax-btn:not(.im-active):active {
+  transform: translateY(0.078125rem);
+}
+
+.im-headparallax .im-headparallax-icono {
+  display: inline-flex;
+  align-items: center;
+  color: var(--im-icono-color);
+  justify-content: var(--im-icono-justify);
+  width: var(--im-icono-size);
+  height: var(--im-icono-size);
+  background-color: var(--im-icono-bg);
+  border: 1px solid;
+  border-color: var(--im-icono-border-color);
+  position: relative;
+  border-radius: var(--im-icono-rounded);
+  box-shadow: var(--im-icono-shadow);
+}
+
+.im-headparallax .im-headparallax-icono > * {
+  position: absolute;
+  font-size: calc(var(--im-icono-size) / var(--im-icono-dimension));
+}
+
+.im-headparallax .im-headparallax-icono > img {
+  width: var(--im-icono-size);
+  height: var(--im-icono-size);
+  border-radius: var(--im-icono-rounded);
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.im-headparallax a.im-headparallax-icono,
+.im-headparallax button.im-headparallax-icono {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.im-headparallax a.im-headparallax-icono:active,
+.im-headparallax button.im-headparallax-icono:active {
+  transform: translateY(0.078125rem);
+}
+
+.im-headparallax .im-headparallax-tarj {
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--im-tarj-width);
+  backdrop-filter: blur(var(--im-tarj-blur));
+  background-color: var(--im-tarj-bg);
+  color: var(--im-tarj-color);
+  border: 1px solid;
+  border-color: var(--im-tarj-border-color);
+  align-items: var(--im-tarj-align-item);
+  padding: var(--im-tarj-padding);
+  flex-direction: var(--im-tarj-fx-direction);
+  gap: var(--im-tarj-gap);
+  box-shadow: var(--im-tarj-shadow);
+}
+
+.im-headparallax button.im-headparallax-tarj,
+.im-headparallax a.im-headparallax-tarj {
+  transition: 200ms linear;
+  transition-property: transform;
+  text-decoration: none;
+}
+
+.im-headparallax button.im-headparallax-tarj:active,
+.im-headparallax a.im-headparallax-tarj:active {
+  transform: scale(0.95);
+}
+
+.im-headparallax .im-link,
+.im-headparallax .im-content > ul.im-item-translate,
+.im-headparallax .im-headparallax-titles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.im-headparallax .im-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: var(--im-headparallax-height);
+  overflow: hidden;
+}
+
+.im-headparallax .im-content .im-item-translate {
+  --im-translate-slide: 0;
+  --im-item-translate-zindex: 0;
+  position: absolute;
+  z-index: var(--im-item-translate-zindex);
+}
+
+.im-headparallax .im-content .im-item-translate[data-im-tranlate=x]:not(.im-static) {
+  transform: translateX(var(--im-translate-slide));
+}
+
+.im-headparallax .im-content .im-item-translate[data-im-tranlate=y]:not(.im-static) {
+  transform: translateY(var(--im-translate-slide));
+}
+
+.im-headparallax .im-content > article.im-item-translate,
+.im-headparallax .im-content > picture.im-item-translate {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--im-headparallax-height);
+}
+
+.im-headparallax .im-content > article.im-item-translate > img,
+.im-headparallax .im-content > picture.im-item-translate > img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.im-headparallax .im-content > ul.im-item-translate {
+  gap: 25px;
+  width: auto;
+}
+
+.im-headparallax .im-headparallax-titles {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: var(--im-headparallax-height);
+  margin-bottom: 5rem;
+  text-align: var(--im-headparallax-text-align);
+}
+
+.im-headparallax .im-headparallax-titles .im-section {
+  width: var(--im-headparallax-titles-mxwidth);
+  margin-bottom: var(--im-headparallax-mb-section);
+}
+
+.im-headparallax .im-headparallax-titles .im-section > * {
+  margin-inline: auto;
+}
+
+.im-headparallax .im-headparallax-titles .im-section > * + * {
+  margin-top: 2.5rem;
+}
+
+.im-headparallax .im-headparallax-titles .im-title {
+  font-size: 5rem;
+}
+
+.im-headparallax .im-headparallax-titles .im-text {
+  font-size: 1.55rem;
+}
+
+.im-headparallax .im-headparallax-titles .im-buttons {
+  display: inline-flex;
+}
+
+.im-headparallax .im-headparallax-titles .im-buttons > * + * {
+  margin-left: 15px;
+}
+
+.im-headparallax:not(.look-i):not(.look-ii):not(.look-iii) {
+  --im-headparallax-text-align: left;
+}
+
+.im-headparallax:not(.look-i):not(.look-ii):not(.look-iii) ul.im-item-translate {
+  bottom: var(--im-headparallax-ul-separed);
+  right: var(--im-headparallax-ul-separed);
+}
+
+.im-headparallax.look-i {
+  --im-headparallax-text-align: center;
+}
+
+.im-headparallax.look-i ul.im-item-translate {
+  width: 100%;
+  justify-content: center;
+  bottom: var(--im-headparallax-ul-separed);
+}
+
+.im-headparallax.look-iii {
+  --im-headparallax-text-align: right;
+  --im-headparallax-mb-section: 0;
+}
+
+.im-headparallax.look-iii ul.im-item-translate {
+  left: var(--im-headparallax-ul-separed);
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.im-headparallax.look-ii {
+  --im-headparallax-text-align: left;
+  --im-headparallax-mb-section: 0;
+}
+
+.im-headparallax.look-ii ul.im-item-translate {
+  right: var(--im-headparallax-ul-separed);
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+
+
 /*# sourceMappingURL=bootstrap-custom.css.map */

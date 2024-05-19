@@ -2,7 +2,7 @@
 @section('title', 'Inicio')
 @section('body')
 <div class="d-block mb-4">
-    <x-news-header />
+    <x-news-header  title="Noticias" />
 </div>
 <x-news-outstanding />
 <x-news-list />

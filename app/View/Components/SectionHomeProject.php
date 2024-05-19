@@ -5,11 +5,11 @@ namespace App\View\Components;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use App\Traits\LinksHome;
+use App\Traits\Projects;
 
 class SectionHomeProject extends Component
 {
-    use LinksHome;
+    use Projects;
     public function __construct()
     {
         //

@@ -5,7 +5,7 @@
             <img src="{{ asset('img/logo-cambio-white.png') }}" width="110" alt="">
         </div>
         <div class="col-4 text-center text-white">
-            <h1 class="mb-0 fw-bold text-uppercase">NOTICIAS</h1>
+            <h1 class="mb-0 fw-bold text-uppercase">{{ $title }}</h1>
         </div>
         <div class="col-4"></div>
     </div>

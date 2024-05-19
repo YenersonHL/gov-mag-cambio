@@ -1,4 +1,4 @@
-<div class="container-fluid position-relative">
+<div class="container-fluid position-relative mb-5">
     <div class="row">
         <div class="col-12">
             <div class="container">
@@ -9,7 +9,7 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12 col-lg-8">
-                                <a href="{{ url('/noticia/' . $last['path']) }}" class="card text-link border-0 overflow-hidden rounded-3 shadow-md mb-4 position-relative">
+                                <a href="{{ url('/noticias/' . $last['path']) }}" class="card text-link border-0 overflow-hidden rounded-3 shadow-md mb-4 position-relative">
                                     <div class="card-body p-0" style="height: 500px;">
                                         <img class="w-100 object-img" src="{{ asset('img/galery/' . $last['img']) }}" alt="">
                                     </div>
@@ -38,7 +38,7 @@
                                 <ul class="list-unstyled">
                                     @foreach($outstanding as $key => $value)
                                     <li class="mb-1 border-bottom pt-2">
-                                        <a href="{{ url('/noticia/' . $value['path']) }}" class="card border-0 text-link">
+                                        <a href="{{ url('/noticias/' . $value['path']) }}" class="card border-0 text-link">
                                             <div class="row">
                                                 <div class="col-auto col-lg-12 col-xl-auto mb-2">
                                                     <div class="block shadow-md position-relative overflow-hidden rounded-3" style="width: 130px; height: 100px;">

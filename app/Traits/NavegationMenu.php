@@ -6,20 +6,24 @@ trait NavegationMenu
 {
     public $navegationMenu = [
         [
-            "path"=>"/",
-            "label"=>"Inicio"
+            "path" => "/",
+            "label" => "Inicio"
         ],
         [
-            "path"=>"/blog",
-            "label"=>"Blog"
+            "path" => "/nosotros",
+            "label" => "Nosotros"
         ],
         [
-            "path"=>"/noticias",
-            "label"=>"Noticias"
+            "path" => "/proyectos",
+            "label" => "Proyectos"
         ],
         [
-            "path"=>"/contacto",
-            "label"=>"Contacto"
+            "path" => "/noticias",
+            "label" => "Noticias"
+        ],
+        [
+            "path" => "/contacto",
+            "label" => "Contacto"
         ],
     ];
 }

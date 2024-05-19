@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{ asset('ui/bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('ui/bootstrap/bootstrap-custom.css') }}">
     <link rel="stylesheet" href="{{ asset('ui/splide/splide.min.css') }}">
-    <script type="text/javascript" src="{{ asset('ui/splide/splide.min.js') }}"></script>
     @yield('style')
 </head>
 <body>
@@ -20,18 +19,10 @@
         {{-- <x-section-home-patrocinio /> --}}
         <x-footer-main />
     </div>
-    <script src="{{ asset('ui/bootstrap/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('ui/vue/vue-v2.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('ui/add/rxjs.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('ui/splide/splide.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('ui/vue/vue-v2.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('ui/bootstrap/bootstrap.bundle.min.js') }}"></script>
     @yield('script')
-    <script>
-    /*document.addEventListener("DOMContentLoaded", () => {
-        const sliderFooter = new Splide('#slider-footer', {
-            type: 'loop',
-            perPage: 4,
-            gap: 10
-        });
-        sliderFooter.mount();
-    });*/
-    </script>
 </body>
 </html>

@@ -3,6 +3,7 @@
         <div class="col-12">
             <div class="container">
                 @foreach($blogsList as $key => $value)
+                @if($value['category'] === $category or $category === 'all')
                 <div class="row align-items-center mb-5">
                     <a href="{{ url($value['path']) }}" class="col-12 text-decoration-none">
                         <x-title-section-blue
@@ -22,6 +23,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
                 @endforeach
             </div>
         </div>

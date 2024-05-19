@@ -1,14 +1,12 @@
 @extends('layouts.public')
 @section('title', 'Inicio')
 @section('body')
-<x-blog-header />
-<x-section-blogs />
+blog
 @endsection
 @section('script')
 <script type="text/javascript">
 function init() {
-
-
+    console.log("init");
 }
 new Vue({
         delimiters: ['[[', ']]'],

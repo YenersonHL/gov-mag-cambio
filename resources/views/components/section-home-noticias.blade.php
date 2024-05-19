@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-4">
-                        <x-title-section-basic setLabel="Noticias" />
+                        <x-title-section-basic setLabel="{{ $title }}" />
                     </div>
                     <div class="col-12">
                         <div class="d-flex flex-wrap justify-content-end">

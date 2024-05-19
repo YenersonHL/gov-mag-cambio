@@ -10,11 +10,11 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-lg-10">
-                                    <div class="row">
-                                        @foreach($linksHome as $key)
+                                    <div class="row align-items-center justify-content-center">
+                                        @foreach($linkProjects as $key)
                                         <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                                            <a href="{{ url('/blog/'.$key['link']) }}" class="text-decoration-none content-link">
-                                                <img height="60" src="{{ asset('img/'.$key['img']) }}" alt="">
+                                            <a href="{{ url('/proyectos/'.$key['link']) }}" class="text-decoration-none content-link">
+                                                <img class="w-100" src="{{ asset('img/'.$key['img']) }}" alt="{{ $key['title'] }}">
                                             </a>
                                         </div>
                                         @endforeach
